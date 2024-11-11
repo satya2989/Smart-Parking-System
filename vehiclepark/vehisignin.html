@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:#a89c35;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .login-container label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="datetime-local"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .login-container button:hover {
+            background-color: #218838;
+        }
+        .sign-up-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .sign-up-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .sign-up-link a:hover {
+            text-decoration: underline;
+        }
+        h2{
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="log">
+            <label for="mobile">Mobile Number</label>
+            <input type="text" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+
+            <label for="vehicle">Vehicle Number</label>
+            <input type="text" id="vehicle" name="vehicle" placeholder="Enter your vehicle number" required>
+
+            <label for="datetime">Present Date and Time</label>
+            <input type="datetime-local" id="datetime" name="datetime" required>
+
+          
+
+            <button type="submit" id="f" style="visibility: visible;">GET FARE</button>
+            <div id="fare" style="visibility: hidden;">
+                <label for="otp">Total Fare:</label>
+                <input type="number" id="otp" name="otp">
+                <button id="pay" type="submit">PAY NOW</button>
+            </div>
+        </form>
+        <div class="sign-up-link">
+            <p>Don't have an account? <a href="./vehi.html">Sign up here</a></p>
+        </div>
+    </div>
+
+    <script src="parking1.js">
+
+    </script>
+</body>
+</html>
